@@ -11,6 +11,5 @@ RUN apt-get update
 
 EXPOSE 80
 
-CMD ["nginx","-g daemon off;"]
-
-CMD ["-h"]
+WORKDIR /var/www/html
+ENTRYPOINT ["nginx","-g daemon off;"]
