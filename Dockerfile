@@ -16,4 +16,4 @@ ENV DATABASE_IP 192.168.2.9
 
 RUN usermod -aG root cbreton
 USER cbreton
-#ENTRYPOINT ["nginx","-g daemon off;"]
+VOLUME ["/my-data"]
